@@ -7,6 +7,7 @@ export default function Counter () {
 const [count, setCount] = useState(0)
 
     return (
+        // if you want your page to scroll, use scrollView
         <View style={styles.counterContainer}>
             <Text style={styles.counterText}> You Clicked the button {count} times.</Text>
             <Button title='+' onPress={() => setCount(count + 1)}/>
